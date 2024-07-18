@@ -5,8 +5,14 @@ import Layout from '../components/Layout';
 // import { Link } from 'gatsby';
 import Sidebar from '../components/Sidebar';
 import config from '../../config';
-const formatDescription = (description, links) => {
+
+
+const formatDescription = (description, links) => {  
   let formatted = description;
+  formatted = reactStringReplace(formatted, /(\* .*$)/gm, (match) => (
+    <li>{match.substring(2)}</li>
+  ));
+
   if (links) {
     for (let text in links) {
       const replacementFunc = () => (
@@ -17,9 +23,7 @@ const formatDescription = (description, links) => {
       formatted = reactStringReplace(formatted, text, replacementFunc);
     }
   }
-  formatted = reactStringReplace(formatted, /(\* .*$)/gm, (match) => (
-    <li>{match.substring(2)}</li>
-  ));
+
   return formatted;
 };
 const IndexPage = () => (
