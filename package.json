@@ -21,9 +21,8 @@
   },
   "scripts": {
     "develop": "NODE_ENV=development gatsby develop",
-    "build": "npm run clean && gatsby build",
+    "build": "npm runn clean && gatsby build",
     "buildprod": "npm run clean && gatsby build --prefix-paths",
-    "deploy": "npm run clean && gatsby build --prefix-paths && gh-pages -d public",
     "serve": "gatsby serve",
     "clean": "rimraf .cache public",
     "format": "prettier --write '**/*.js'",
@@ -34,5 +33,6 @@
     "gatsby-starter",
     "gatsby-starter-resume"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "packageManager": "yarn@1.22.22"
 }
