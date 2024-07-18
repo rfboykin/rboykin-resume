@@ -7,7 +7,8 @@ const GITHUB_USERNAME = 'rfboykin';
 const LINKEDIN_USERNAME = 'robert-boykin';
 const ADDRESS = 'Chicago';
 const EMAIL = 'rfboykin@gmail.com';
-const FOOTER_URL = 'https://github.com/cto-ai/gatsby-resume-template/tree/master';
+const FOOTER_URL =
+  'https://github.com/cto-ai/gatsby-resume-template/tree/master';
 
 const BIO = `
       A highly motivated, PRINCE2 Agile Practioner-certfied project manager with a background 
@@ -52,8 +53,9 @@ const EXPERIENCE_LIST = [
     `,
     period: 'March 2017 - February 2019',
     links: {
-      'Comperemedia Omni': 'https://welcome.comperemedia.com/solutions/comperemedia-omni/',
-    }
+      'Comperemedia Omni':
+        'https://welcome.comperemedia.com/solutions/comperemedia-omni/',
+    },
   },
   {
     title: 'Front-End Engineer',
@@ -80,7 +82,7 @@ const EXPERIENCE_LIST = [
       * Identified a process improvement relating to the alerting system of HP BSM which would better serve our customers by enabling them to react to application outages sooner. Helped to incorporate my improvement into the application monitoring standards across the Boeing Enterprise.       
 `,
     period: 'July 2014 - June 2015',
-  }
+  },
 ];
 
 const EDUCATION_LIST = [
@@ -107,7 +109,7 @@ const LANGUAGES_AND_TOOLS = [
   { name: 'Javascript', iconClass: 'fa-js-square' },
   { name: 'Docker', iconClass: 'fa-docker' },
   { name: 'Angular', iconClass: 'fa-angular' },
-  { name: 'Django', iconClass: 'fa-django'}, // todo
+  { name: 'Django', iconClass: 'fa-django' }, // todo
   { name: 'React', iconClass: 'fa-react' },
   { name: 'Redux', iconClass: 'fa-redux' }, // todo
   { name: 'NodeJS', iconClass: 'fa-node-js' },
@@ -116,7 +118,12 @@ const LANGUAGES_AND_TOOLS = [
   { name: 'NPM', iconClass: 'fa-npm' },
 ];
 
-const SKILLS = ['Collaborative Problem Solving', 'Agile', 'Scrum Mastering', 'Requirements Gathering'];
+const SKILLS = [
+  'Collaborative Problem Solving',
+  'Agile',
+  'Scrum Mastering',
+  'Requirements Gathering',
+];
 
 const PORTFOLIO = {
   introParagraphs: [

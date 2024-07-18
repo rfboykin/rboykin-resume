@@ -8,14 +8,20 @@ import config from '../../config';
 const formatDescription = (description, links) => {
   let formatted = description;
   if (links) {
-    for (let text in links){
-      const replacementFunc = () => <a target="_blank" href={links[text]}>{text}</a>;
-      formatted = reactStringReplace(formatted ,text, replacementFunc);
+    for (let text in links) {
+      const replacementFunc = () => (
+        <a target="_blank" href={links[text]}>
+          {text}
+        </a>
+      );
+      formatted = reactStringReplace(formatted, text, replacementFunc);
     }
-  }  
-  formatted = reactStringReplace(formatted,/(\* .*$)/gm, match => <li>{match.substring(2)}</li> );
+  }
+  formatted = reactStringReplace(formatted, /(\* .*$)/gm, (match) => (
+    <li>{match.substring(2)}</li>
+  ));
   return formatted;
-}
+};
 const IndexPage = () => (
   <Layout>
     <Sidebar />
@@ -48,7 +54,7 @@ const IndexPage = () => (
       </section>
 
       <hr className="m-0" />
-{/* TODO: Add ability for markdown links, add ability for bulletd lists in this seciton at least */}
+      {/* TODO: Add ability for markdown links, add ability for bulletd lists in this seciton at least */}
       <section
         className="resume-section p-3 p-lg-5 d-flex justify-content-center"
         id="experience"
@@ -83,12 +89,8 @@ const IndexPage = () => (
           <h2 className="mb-5">Education</h2>
 
           {config.educationList.map((education) => {
-            const {
-              institution,
-              qualification,
-              description,
-              period,
-            } = education;
+            const { institution, qualification, description, period } =
+              education;
             return (
               <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
                 <div className="resume-content">
@@ -201,7 +203,7 @@ const IndexPage = () => (
     <div className="container w-100">
       <p className="text-center">
         <small className="d-lg-none d-xl-none">
-          Template forked from {' '}
+          Template forked from{' '}
           <a href={`${config.footerUrl}`} className="">
             cto-ai's repository
           </a>

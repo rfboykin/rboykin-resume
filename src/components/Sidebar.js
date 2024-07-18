@@ -72,7 +72,7 @@ export class Sidebar extends Component {
           </Scrollspy>
         </div>
         <small className="d-none d-lg-block text-white">
-        Template forked from{' '}
+          Template forked from{' '}
           <a
             href={`${config.footerUrl}`}
             className="text-light sidebar-footer-link"
