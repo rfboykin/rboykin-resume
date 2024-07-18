@@ -7,11 +7,12 @@ const GITHUB_USERNAME = 'rfboykin';
 const LINKEDIN_USERNAME = 'robert-boykin';
 const ADDRESS = 'Chicago';
 const EMAIL = 'rfboykin@gmail.com';
+const PROTOTYPE_SITE = 'rboyk.in';
 const FOOTER_URL =
   'https://github.com/cto-ai/gatsby-resume-template/tree/master';
 
 const BIO = `
-      A highly motivated, PRINCE2 Agile Practioner-certfied project manager with a background 
+      A highly motivated, PRINCE2 Agile  Practitioner-certified project manager with a background 
       in Web Development and Software Engineering. My technical experience has been in 
       engineering web applications, where I frequently took initiative for project planning 
       and communication duties which then allowed me to transition into leading the project and 
@@ -109,11 +110,13 @@ const LANGUAGES_AND_TOOLS = [
   { name: 'HTML5', iconClass: 'fa-html5' },
   { name: 'CSS3', iconClass: 'fa-css3-alt' },
   { name: 'Javascript', iconClass: 'fa-js-square' },
+  { name: 'TypeScript', iconClass: 'fa-ts-square' },
   { name: 'Docker', iconClass: 'fa-docker' },
   { name: 'Angular', iconClass: 'fa-angular' },
   { name: 'Django', iconClass: 'fa-django' }, // todo
   { name: 'React', iconClass: 'fa-react' },
   { name: 'Redux', iconClass: 'fa-redux' }, // todo
+  { name: 'ElasticSearch', iconClass: 'fa-elastic' }, // todo
   { name: 'NodeJS', iconClass: 'fa-node-js' },
   { name: 'SASS', iconClass: 'fa-sass' },
   { name: 'Wordpress', iconClass: 'fa-wordpress' },
@@ -199,4 +202,5 @@ module.exports = {
   email: EMAIL,
   address: ADDRESS,
   footerUrl: FOOTER_URL,
+  prototypeSite: PROTOTYPE_SITE,
 };

@@ -13,7 +13,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-helmet": "^6.0.0",
-    "react-scrollspy": "^3.4.2",
+    "react-scrollspy": "^f3.4.2",
     "react-string-replace": "^1.1.1",
     "rimraf": "^3.0.2",
     "sass": "^1.77.8",
@@ -21,7 +21,7 @@
   },
   "scripts": {
     "develop": "NODE_ENV=development gatsby develop",
-    "build": "npm runn clean && gatsby build",
+    "build": "npm rnn clean && gatsby build",
     "buildprod": "npm run clean && gatsby build --prefix-paths",
     "serve": "gatsby serve",
     "clean": "rimraf .cache public",

@@ -41,7 +41,8 @@ const IndexPage = () => (
           </h1>
           <div className="subheading mb-5">
             <a href={`mailto:${config.email}`}>{config.email} · </a>
-            {config.address}
+            {config.address} ·{' '}
+            <a href={`https://${config.prototypeSite}`}>Prototypes Portfolio</a>
           </div>
           <p className="lead mb-5">{config.bio}</p>
           <div className="social-icons">
@@ -58,7 +59,6 @@ const IndexPage = () => (
       </section>
 
       <hr className="m-0" />
-      {/* TODO: Add ability for markdown links, add ability for bulletd lists in this seciton at least */}
       <section
         className="resume-section p-3 p-lg-5 d-flex justify-content-center"
         id="experience"
@@ -75,11 +75,14 @@ const IndexPage = () => (
                   {description
                     .trimStart()
                     .split('* ')
-                    .map((descrItem, idx) => (
-                      idx > 0 && <li key={idx + descrItem.substring(0, 5)}> 
-                        {formatDescription(descrItem.trimEnd(), links)}
-                      </li>
-                    ))}
+                    .map(
+                      (descrItem, idx) =>
+                        idx > 0 && (
+                          <li key={idx + descrItem.substring(0, 5)}>
+                            {formatDescription(descrItem.trimEnd(), links)}
+                          </li>
+                        )
+                    )}
                 </div>
                 <div className="resume-date text-md-right">
                   <span className="text-primary">{period}</span>
