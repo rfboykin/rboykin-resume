@@ -9,10 +9,9 @@ import config from '../../config';
 
 const formatDescription = (description, links) => {  
   let formatted = description;
-  formatted = reactStringReplace(formatted, /(\* .*$)/gm, (match) => (
-    <li>{match.substring(2)}</li>
+  formatted = reactStringReplace(formatted, /(\* .*$)/gm, (match, i) => (
+    <li key={i + match.substring(2,7)}>{match.substring(2)}</li>
   ));
-
   if (links) {
     for (let text in links) {
       const replacementFunc = () => (
