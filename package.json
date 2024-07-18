@@ -17,9 +17,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-helmet": "^6.0.0",
-    "react-markdown": "^9.0.1",
     "react-scrollspy": "^3.4.2",
-    "remark-gfm": "^4.0.0",
     "rimraf": "^3.0.2",
     "sass": "^1.77.8",
     "smoothscroll-polyfill": "^0.4.4"
