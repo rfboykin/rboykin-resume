@@ -14,8 +14,8 @@ const formatDescription = (description, links) => {
   ));
   if (links) {
     for (let text in links) {
-      const replacementFunc = () => (
-        <a target="_blank" href={links[text]}>
+      const replacementFunc = (match, i) => (
+        <a key={match.substring(0,5) + i} target="_blank" href={links[text]}>
           {text}
         </a>
       );
