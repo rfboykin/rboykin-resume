@@ -23,20 +23,19 @@ const EXPERIENCE_LIST = [
     title: 'Technical Project Manager',
     company: 'Mintel',
     description: `
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt anim id est laborum.`,
+      * Delivered company's first generative AI tool, Mintel Leap
+      * Managed the project and successfully brought the product in time to be first to market among Market Resarch competitors
+      * Worked with software projects from ideation and requirements gathering, into feasibility determination and planning, through development, delivery, and post-delivery assessments`,
     period: 'December 2021 - July 2024',
+    links: {"Mintel Leap": "https://www.mintel.com/products/leap-market-intelligence-ai/"}
   },
   {
-    title: 'Team Lead',
+    title: 'Scrum Master',
     company: 'Mintel',
     description: `
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt anim id est laborum.`,
+      * Responsible for the team consistently delivering value, communicating project progress to stakeholders, and identifying opportunities for continuous improvement within the team 
+      * Regularly met with individual contributors and stakeholders, including Product Owners, Engineering Leads, Designers, Develoeprs, and Leads of other teams. 
+    `,
     period: 'February 2019 - December 2021',
   },
   {
@@ -123,6 +122,8 @@ const SKILLS = [
   'Agile',
   'Scrum Mastering',
   'Requirements Gathering',
+  'Workshop and Retrospective Facilitating',
+  'Risk Management'
 ];
 
 const PORTFOLIO = {
