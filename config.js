@@ -42,13 +42,13 @@ const EXPERIENCE_LIST = [
     title: 'Front End Engineer',
     company: 'Mintel',
     description: `
-    Engineered front-end website of Comperemedia Omni, multi-channel marketing analysis tool focused on Financial Services and Insurance industries. 
-Developed incremental features and updates, working with Design, Product, and Operations to gather and understand requirements.  
-Built the first version of the Omni data entry web application, Sherpa. Worked closely with Operations to gather their requirements and deliver an application they could use and maintain as needed.  
-Led a project to update the graphing visualization library after identifying deficiencies 
-Pitched, planned, executed and provided support for the initiative  
-Worked with a team of developers to deliver what is now the primary data visualization library across Mintel applications 
-Assisted the Project Lead in running refinement meetings and breaking down work, took on some project management responsibilities  
+    * Engineered front-end website of Comperemedia Omni, multi-channel marketing analysis tool focused on Financial Services and Insurance industries. 
+* Developed incremental features and updates, working with Design, Product, and Operations to gather and understand requirements.  
+* Built the first version of the Omni data entry web application, Sherpa. Worked closely with Operations to gather their requirements and deliver an application they could use and maintain as needed.  
+* Led a project to update the graphing visualization library after identifying deficiencies 
+* Pitched, planned, executed and provided support for the initiative  
+* Worked with a team of developers to deliver what is now the primary data visualization library across Mintel applications 
+* Assisted the Project Lead in running refinement meetings and breaking down work, took on some project management responsibilities  
     `,
     period: 'March 2017 - February 2019',
     links: {
@@ -59,25 +59,25 @@ Assisted the Project Lead in running refinement meetings and breaking down work,
     title: 'Front-End Engineer',
     company: 'The Boeing Company- IT Career Foundation Year 3',
     description: `
-      Developed a suite of common Angular 2 UI components with Typescript and SCSS to be used across multiple shop-floor applications.  
-      Evaluated the user experience of the existing application and worked with the team to improve the usability of the application based on my recommendations.`,
+      * Developed a suite of common Angular 2 UI components with Typescript and SCSS to be used across multiple shop-floor applications.  
+      * Evaluated the user experience of the existing application and worked with the team to improve the usability of the application based on my recommendations.`,
     period: 'July 2016 - January 2017',
   },
   {
     title: 'User Experience Specialist',
     company: 'The Boeing Company- IT Career Foundation Year 2',
     description: `
-      Presented heuristic reviews and usability studies of current systems and provided recommendations to customers to aid them in remedying usability issues.  
-      Conducted focus groups, user interviews, in-lab user testing, and surveys 
-      Delivered interactive prototypes to our customers, iteratively designed according to continuous user testing. `,
+      * Presented heuristic reviews and usability studies of current systems and provided recommendations to customers to aid them in remedying usability issues.  
+      * Conducted focus groups, user interviews, in-lab user testing, and surveys 
+      * Delivered interactive prototypes to our customers, iteratively designed according to continuous user testing. `,
     period: 'July 2015 - June 2016',
   },
   {
     title: 'Application Health and Availability Monitor',
     company: 'The Boeing Company- IT Career Foundation Year 1',
     description: `
-      Developed and maintained over 100 application availability monitors, which included working with application developers to create monitoring requirements and soliciting approvals from application managers. 
-      Identified a process improvement relating to the alerting system of HP BSM which would better serve our customers by enabling them to react to application outages sooner. Helped to incorporate my improvement into the application monitoring standards across the Boeing Enterprise.       
+      * Developed and maintained over 100 application availability monitors, which included working with application developers to create monitoring requirements and soliciting approvals from application managers. 
+      * Identified a process improvement relating to the alerting system of HP BSM which would better serve our customers by enabling them to react to application outages sooner. Helped to incorporate my improvement into the application monitoring standards across the Boeing Enterprise.       
 `,
     period: 'July 2014 - June 2015',
   }
@@ -105,15 +105,18 @@ const LANGUAGES_AND_TOOLS = [
   { name: 'HTML5', iconClass: 'fa-html5' },
   { name: 'CSS3', iconClass: 'fa-css3-alt' },
   { name: 'Javascript', iconClass: 'fa-js-square' },
+  { name: 'Docker', iconClass: 'fa-docker' },
   { name: 'Angular', iconClass: 'fa-angular' },
+  { name: 'Django', iconClass: 'fa-django'}, // todo
   { name: 'React', iconClass: 'fa-react' },
+  { name: 'Redux', iconClass: 'fa-redux' }, // todo
   { name: 'NodeJS', iconClass: 'fa-node-js' },
   { name: 'SASS', iconClass: 'fa-sass' },
   { name: 'Wordpress', iconClass: 'fa-wordpress' },
   { name: 'NPM', iconClass: 'fa-npm' },
 ];
 
-const SKILLS = ['Skill 1', 'Skill 2', 'Skill 3', 'Skill 4', 'Skill 5'];
+const SKILLS = ['Collaborative Problem Solving', 'Agile', 'Scrum Mastering', 'Requirements Gathering'];
 
 const PORTFOLIO = {
   introParagraphs: [
@@ -151,7 +154,7 @@ module.exports = {
   manifestBackgroundColor: '#663399',
   manifestThemeColor: '#663399',
   manifestDisplay: 'standalone',
-  manifestIcon: 'src/assets/images/cto-ai.png', // TODO: new icon
+  manifestIcon: 'src/assets/images/headshot.jpg', // TODO: new icon
   pathPrefix: `/${REPOSITORY}`, // This path is subpath of your hosting https://domain/portfolio
   firstName: FIRST_NAME,
   lastName: LAST_NAME,

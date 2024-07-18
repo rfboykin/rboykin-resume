@@ -1,9 +1,21 @@
 import React from 'react';
+import reactStringReplace from 'react-string-replace';
 import Layout from '../components/Layout';
 
 // import { Link } from 'gatsby';
 import Sidebar from '../components/Sidebar';
 import config from '../../config';
+const formatDescription = (description, links) => {
+  let formatted = description;
+  if (links) {
+    for (let text in links){
+      const replacementFunc = () => <a target="_blank" href={links[text]}>{text}</a>;
+      formatted = reactStringReplace(formatted ,text, replacementFunc);
+    }
+  }  
+  formatted = reactStringReplace(formatted,/(\* .*$)/gm, match => <li>{match.substring(2)}</li> );
+  return formatted;
+}
 const IndexPage = () => (
   <Layout>
     <Sidebar />
@@ -19,7 +31,7 @@ const IndexPage = () => (
           </h1>
           <div className="subheading mb-5">
             <a href={`mailto:${config.email}`}>{config.email} · </a>
-            {config.address} · {config.phone}
+            {config.address}
           </div>
           <p className="lead mb-5">{config.bio}</p>
           <div className="social-icons">
@@ -45,19 +57,12 @@ const IndexPage = () => (
           <h2 className="mb-5">Experience</h2>
           {config.experienceList.map((experience) => {
             const { title, company, description, period, links } = experience;
-            // parse description for any markdown links, then render thsoe as anchor links
-            let descriptionWithLinks = (<p>{description}</p>);
-            for (let text in links){
-              const textWithLink = (<a href={links[text]}>text</a>);
-              console.log(textWithLink)
-              // descriptionWithLinks = descriptionWithLinks.replace(text,textWithLink)
-            }
             return (
               <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
                 <div className="resume-content">
                   <h3 className="mb-0">{title}</h3>
                   <div className="subheading mb-3">{company}</div>
-                  {descriptionWithLinks}
+                  {formatDescription(description, links)}
                 </div>
                 <div className="resume-date text-md-right">
                   <span className="text-primary">{period}</span>
@@ -139,7 +144,7 @@ const IndexPage = () => (
 
       <hr className="m-0" />
 
-      <section
+      {/* <section
         className="resume-section p-3 p-lg-5 d-flex align-items-center"
         id="portfolio"
       >
@@ -170,7 +175,7 @@ const IndexPage = () => (
             );
           })}
         </div>
-      </section>
+      </section> */}
 
       <hr className="m-0" />
 
