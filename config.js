@@ -27,7 +27,10 @@ const EXPERIENCE_LIST = [
       * Managed the project and successfully brought the product in time to be first to market among Market Resarch competitors
       * Worked with software projects from ideation and requirements gathering, into feasibility determination and planning, through development, delivery, and post-delivery assessments`,
     period: 'December 2021 - July 2024',
-    links: {"Mintel Leap": "https://www.mintel.com/products/leap-market-intelligence-ai/"}
+    links: {
+      'Mintel Leap':
+        'https://www.mintel.com/products/leap-market-intelligence-ai/',
+    },
   },
   {
     title: 'Scrum Master',
@@ -123,7 +126,7 @@ const SKILLS = [
   'Scrum Mastering',
   'Requirements Gathering',
   'Workshop and Retrospective Facilitating',
-  'Risk Management'
+  'Risk Management',
 ];
 
 const PORTFOLIO = {

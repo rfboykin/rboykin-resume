@@ -6,22 +6,23 @@ import Layout from '../components/Layout';
 import Sidebar from '../components/Sidebar';
 import config from '../../config';
 
-
-const formatDescription = (description, links) => {  
+const formatDescription = (description, links) => {
   let formatted = description;
-  formatted = reactStringReplace(formatted, /(\* .*$)/gm, (match, i) => (
-    <li key={i + match.substring(2,7)}>{match.substring(2)}</li>
-  ));
+
   if (links) {
     for (let text in links) {
       const replacementFunc = (match, i) => (
-        <a key={match.substring(0,5) + i} target="_blank" href={links[text]}>
+        <a key={match.substring(0, 5) + i} target="_blank" href={links[text]}>
           {text}
         </a>
       );
       formatted = reactStringReplace(formatted, text, replacementFunc);
     }
   }
+
+  formatted = reactStringReplace(formatted, /(\* .*$)/gm, (match, i) => (
+    <li key={i + match.substring(2, 7)}>{match.substring(2)}</li>
+  ));
 
   return formatted;
 };
@@ -71,7 +72,14 @@ const IndexPage = () => (
                 <div className="resume-content">
                   <h3 className="mb-0">{title}</h3>
                   <div className="subheading mb-3">{company}</div>
-                  {formatDescription(description, links)}
+                  {description
+                    .trimStart()
+                    .split('* ')
+                    .map((descrItem, idx) => (
+                      idx > 0 && <li key={idx + descrItem.substring(0, 5)}> 
+                        {formatDescription(descrItem.trimEnd(), links)}
+                      </li>
+                    ))}
                 </div>
                 <div className="resume-date text-md-right">
                   <span className="text-primary">{period}</span>
