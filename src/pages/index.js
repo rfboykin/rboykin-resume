@@ -218,7 +218,7 @@ const IndexPage = () => (
       <p className="text-center">
         <small className="d-lg-none d-xl-none">
           Template forked from{' '}
-          <a href={`${config.footerUrl}`} className="">
+          <a href={`${config.footerUrl}`} className="" target="_blank">
             cto-ai's repository
           </a>
         </small>
