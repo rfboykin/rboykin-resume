@@ -21,12 +21,26 @@ const BIO = `
 
 const EXPERIENCE_LIST = [
   {
+    title: "Founder, Owner",
+    company: "Fulcrum Apps, LLC",
+    description: `
+    * Founded and operated Fulcrum Apps, LLC specializing in technology consulting for small businesses.
+    * Created client-facing Wordpress website which increased lead generation by 30% for an independent insurance broker.
+    * Built Flask & React app to migrate business data into new CRM platform, reducing costs by 75%.`,
+    period: 'August 2024 - Present',
+    links: {
+      'Fulcrum Apps, LLC':
+        'https://fulcrumapps.dev/'
+    }
+  },
+  {
     title: 'Technical Project Manager',
     company: 'Mintel',
     description: `
-      * Delivered company's first generative AI tool, Mintel Leap
-      * Managed the project and successfully brought the product in time to be first to market among Market Resarch competitors
-      * Worked with software projects from ideation and requirements gathering, into feasibility determination and planning, through development, delivery, and post-delivery assessments`,
+      * Delivered Mintel Leap, responsible for additional $1M in revenue, ahead of schedule by streamlining processes, managing dependencies, and coordinating across business functions.
+      * Managed full project lifecycle of 3-4 SaaS projects simultaneously with budgets ranging from $100k-$500k.
+      * Achieved on-time deliveries for 95% of projects under my supervision by actively managing timelines, risks, and budget.
+      * Acted as go-to person between stakeholders and individual contributors, published weekly status reports to C-Suite audiences to give visibility on budget and scope progress.`,
     period: 'December 2021 - July 2024',
     links: {
       'Mintel Leap':
@@ -34,10 +48,12 @@ const EXPERIENCE_LIST = [
     },
   },
   {
-    title: 'Scrum Master',
+    title: 'Scrum Master & Full Stack Engineer',
     company: 'Mintel',
     description: `
+      * Led cloud migration of web infrastructure to AWS, cutting infrastructure costs by 10% & aligning with strategic initiatives.
       * Responsible for the team consistently delivering value, communicating project progress to stakeholders, and identifying opportunities for continuous improvement within the team 
+      * Championed Agile best practices by leading Daily Scrums, Sprint Planning ceremonies and Retrospectives.
       * Regularly met with individual contributors and stakeholders, including Product Owners, Engineering Leads, Designers, Develoeprs, and Leads of other teams. 
     `,
     period: 'February 2019 - December 2021',
