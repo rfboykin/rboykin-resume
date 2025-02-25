@@ -12,12 +12,11 @@ const FOOTER_URL =
   'https://github.com/cto-ai/gatsby-resume-template/tree/master';
 
 const BIO = `
-      A highly motivated, PRINCE2 Agile  Practitioner-certified project manager with a background 
-      in Web Development and Software Engineering. My technical experience has been in 
-      engineering web applications, where I frequently took initiative for project planning 
-      and communication duties which then allowed me to transition into leading the project and 
-      being responsible for its timely deliverables. Relentlessly positive and enthusiastic, 
-      my favorite testimonial is is that coworkers describe me as “a delight to work with"`;
+      A problem solver who loves to build solutions the right way. Highly motivated Software Engineer and PRINCE2 Agile  Practitioner-certified project manager. 
+      My technical experience has been in engineering web applications, where I frequently took initiative for project planning 
+      and communication duties which then allowed me to transition into leading projects and 
+      being responsible for their timely deliverables. Relentlessly positive and enthusiastic, 
+      my favorite testimonial is is that coworkers describe me as “a delight to work with"!`;
 
 const EXPERIENCE_LIST = [
   {
