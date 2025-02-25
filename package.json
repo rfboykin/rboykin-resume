@@ -21,7 +21,7 @@
   },
   "scripts": {
     "develop": "NODE_ENV=development gatsby develop",
-    "build": "npm rnn clean && gatsby build",
+    "build": "npm run clean && gatsby build",
     "buildprod": "npm run clean && gatsby build --prefix-paths",
     "serve": "gatsby serve",
     "clean": "rimraf .cache public",
