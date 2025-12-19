@@ -6,7 +6,7 @@
     "gatsby": "^4.25.7",
     "gatsby-plugin-manifest": "^2.4.8",
     "gatsby-plugin-offline": "^3.2.6",
-    "gatsby-plugin-react-helmet": "^3.3.2",
+    "gatsby-plugin-react-helmet": "^6.15.0",
     "gatsby-plugin-sass": "^6.15.0",
     "gh-pages": "^6.3.0",
     "prettier": "^3.7.4",
