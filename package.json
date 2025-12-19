@@ -16,7 +16,7 @@
     "react-scrollspy": "^3.4.2",
     "react-string-replace": "^1.1.1",
     "rimraf": "^6.1.2",
-    "sass": "^1.96.0",
+    "sass": "^1.97.0",
     "smoothscroll-polyfill": "^0.4.4"
   },
   "scripts": {
